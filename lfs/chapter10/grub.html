@@ -13,19 +13,19 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Making the LFS System Bootable
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="kernel.html" title="Linux-6.2.11">Prev</a>
+          <a accesskey="p" href="kernel.html" title="Linux-6.3.1">Prev</a>
           <p>
-            Linux-6.2.11
+            Linux-6.3.1
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -59,7 +59,7 @@
           If your system has UEFI support and you wish to boot LFS with UEFI,
           you should skip this page, and configure GRUB with UEFI support
           using the instructions provided in <a class="ulink" href=
-          "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/grub-setup.html">
+          "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/grub-setup.html">
           the BLFS page</a>.
         </p>
       </div>
@@ -88,7 +88,7 @@
           the procedure below to work, you need to jump ahead to BLFS and
           install <strong class="userinput"><code>xorriso</code></strong>
           from the <a class="ulink" href=
-          "https://www.linuxfromscratch.org/blfs/view/svn/multimedia/libisoburn.html">
+          "https://www.linuxfromscratch.org/blfs/view/systemd/multimedia/libisoburn.html">
           libisoburn</a> package.
         </p>
         <pre class="userinput"><kbd class="command">cd /tmp
@@ -206,8 +206,8 @@ set timeout=5
 insmod ext2
 set root=(hd0,2)
 
-menuentry "GNU/Linux, Linux 6.2.11-lfs-r11.3-65" {
-        linux   /boot/vmlinuz-6.2.11-lfs-r11.3-65 root=/dev/sda2 ro
+menuentry "GNU/Linux, Linux 6.3.1-lfs-r11.3-77-systemd" {
+        linux   /boot/vmlinuz-6.3.1-lfs-r11.3-77-systemd root=/dev/sda2 ro
 }</code>
 EOF</kbd></pre>
         <div class="admon note">
@@ -302,9 +302,9 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="kernel.html" title="Linux-6.2.11">Prev</a>
+          <a accesskey="p" href="kernel.html" title="Linux-6.3.1">Prev</a>
           <p>
-            Linux-6.2.11
+            Linux-6.3.1
           </p>
         </li>
         <li class="next">
@@ -320,7 +320,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

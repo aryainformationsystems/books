@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Making the LFS System Bootable
@@ -30,9 +30,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="kernel.html" title="Linux-6.2.11">Next</a>
+          <a accesskey="n" href="kernel.html" title="Linux-6.3.1">Next</a>
           <p>
-            Linux-6.2.11
+            Linux-6.3.1
           </p>
         </li>
         <li class="up">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -68,12 +68,6 @@
 "replaceable"><code>&lt;fff&gt;</code></em>    defaults            1     1
 /dev/<em class=
 "replaceable"><code>&lt;yyy&gt;</code></em>     swap         swap     pri=1               0     0
-proc           /proc        proc     nosuid,noexec,nodev 0     0
-sysfs          /sys         sysfs    nosuid,noexec,nodev 0     0
-devpts         /dev/pts     devpts   gid=5,mode=620      0     0
-tmpfs          /run         tmpfs    defaults            0     0
-devtmpfs       /dev         devtmpfs mode=0755,nosuid    0     0
-tmpfs          /dev/shm     tmpfs    nosuid,nodev        0     0
 
 # End /etc/fstab</code>
 EOF</kbd></pre>
@@ -147,8 +141,8 @@ EOF</kbd></pre>
         "option">barrier=1</code> mount option to the appropriate entry in
         <code class="filename">/etc/fstab</code>. To check if the disk drive
         supports this option, run <a class="ulink" href=
-        "https://www.linuxfromscratch.org/blfs/view/svn/general/hdparm.html">hdparm</a>
-        on the applicable disk drive. For example, if:
+        "https://www.linuxfromscratch.org/blfs/view/systemd/general/hdparm.html">
+        hdparm</a> on the applicable disk drive. For example, if:
       </p>
       <pre class="userinput"><kbd class=
       "command">hdparm -I /dev/sda | grep NCQ</kbd></pre>
@@ -170,9 +164,9 @@ EOF</kbd></pre>
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="kernel.html" title="Linux-6.2.11">Next</a>
+          <a accesskey="n" href="kernel.html" title="Linux-6.3.1">Next</a>
           <p>
-            Linux-6.2.11
+            Linux-6.3.1
           </p>
         </li>
         <li class="up">
@@ -181,7 +175,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

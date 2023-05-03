@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      6.5.&nbsp;Coreutils-9.2
+      6.5.&nbsp;Coreutils-9.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL-NS Stylesheets Vsnapshot" />
@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;6.&nbsp;Cross Compiling Temporary Tools
@@ -41,14 +41,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
     <div class="wrap" lang="en" xml:lang="en">
       <h1 class="sect1">
         <a id="ch-tools-coreutils" name="ch-tools-coreutils"></a>6.5.
-        Coreutils-9.2
+        Coreutils-9.3
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <p>
@@ -80,7 +80,8 @@
             --host=$LFS_TGT                   \
             --build=$(build-aux/config.guess) \
             --enable-install-program=hostname \
-            --enable-no-install-program=kill,uptime</kbd></pre>
+            --enable-no-install-program=kill,uptime \
+            gl_cv_macro_MB_CUR_MAX_good=y</kbd></pre>
         <div class="variablelist">
           <p class="title">
             <strong>The meaning of the configure options:</strong>
@@ -150,7 +151,7 @@ sed -i 's/"1"/"8"/'                    $LFS/usr/share/man/man8/chroot.8</kbd></p
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

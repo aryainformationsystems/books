@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Preparing the Host System
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -100,12 +100,12 @@
         <p>
           For experienced users, other partitioning schemes are possible. The
           new LFS system can be on a software <a class="ulink" href=
-          "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/raid.html">RAID</a>
-          array or an <a class="ulink" href=
-          "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/aboutlvm.html">
+          "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/raid.html">
+          RAID</a> array or an <a class="ulink" href=
+          "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/aboutlvm.html">
           LVM</a> logical volume. However, some of these options require an
           <a class="ulink" href=
-          "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html">
+          "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/initramfs.html">
           initramfs</a>, which is an advanced topic. These partitioning
           methodologies are not recommended for first time LFS users.
         </p>
@@ -231,7 +231,7 @@
                   /boot/efi &ndash; The EFI System Partition, which is needed
                   for booting the system with UEFI. Read <a class="ulink"
                   href=
-                  "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/grub-setup.html">
+                  "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/grub-setup.html">
                   the BLFS page</a> for details.
                 </p>
               </li>
@@ -274,12 +274,13 @@
               </li>
               <li class="listitem">
                 <p>
-                  /tmp &ndash; A separate /tmp partition is rare, but useful
-                  if configuring a thin client. This partition, if used, will
-                  usually not need to exceed a couple of gigabytes. If you
-                  have enough RAM, you can mount a <code class=
-                  "systemitem">tmpfs</code> on /tmp to make access to
-                  temporary files faster.
+                  /tmp &ndash; By default, systemd mounts a <code class=
+                  "systemitem">tmpfs</code> here. If you want to override
+                  that behavior, follow <a class="xref" href=
+                  "../chapter09/systemd-custom.html#systemd-no-tmpfs" title=
+                  "9.10.3.&nbsp;Disabling tmpfs for /tmp">Section&nbsp;9.10.3,
+                  &ldquo;Disabling tmpfs for /tmp&rdquo;</a> when configuring
+                  the LFS system.
                 </p>
               </li>
               <li class="listitem">
@@ -327,7 +328,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

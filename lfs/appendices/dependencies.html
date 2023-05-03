@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Part&nbsp;V.&nbsp;Appendices
@@ -30,10 +30,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="../scripts/scripts.html" title=
-          "Boot and sysconfig scripts version-20230101">Next</a>
+          <a accesskey="n" href="licenses.html" title="LFS Licenses">Next</a>
           <p>
-            Boot and sysconfig scripts version-20230101
+            LFS Licenses
           </p>
         </li>
         <li class="up">
@@ -42,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -231,7 +230,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/emacs.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/emacs.html">
             Emacs</a></span>
           </div>
         </div>
@@ -335,7 +334,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/x/installing.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/x/installing.html">
             Xorg</a></span>
           </div>
         </div>
@@ -438,7 +437,7 @@
             <span class="segbody"><a class="ulink" href=
             "https://sourceware.org/elfutils/">Elfutils</a> and <a class=
             "ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/jansson.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/jansson.html">
             Jansson</a></span>
           </div>
         </div>
@@ -489,7 +488,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/doxygen.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/doxygen.html">
             Doxygen</a></span>
           </div>
         </div>
@@ -630,9 +629,8 @@
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody">Bash, Diffutils, <span class=
-            "phrase">Eudev,</span> Findutils, <span class="phrase">and</span>
-            Man-DB</span>
+            <span class="segbody">Bash, Diffutils, Findutils,
+            Man-DB<span class="phrase">, and Systemd</span></span>
           </div>
         </div>
       </div>
@@ -645,6 +643,57 @@
             "https://metacpan.org/pod/Expect">Expect.pm</a> and <a class=
             "ulink" href=
             "https://metacpan.org/pod/IO::Tty">IO::Tty</a></span>
+          </div>
+        </div>
+      </div>
+      <h2>
+        <a id="dbus-dep" name="dbus-dep"></a>D-Bus
+      </h2>
+      <div class="segmentedlist">
+        <a id="dbus-depends" name="dbus-depends"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Installation depends on:</strong>
+            <span class="segbody">Bash, Binutils, Coreutils, Diffutils, Gawk,
+            GCC, Glibc, Grep, Make, Sed, Systemd, and Util-linux</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="dbus-rundeps" name="dbus-rundeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Required at runtime:</strong>
+            <span class="segbody">Glibc and Systemd</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="dbus-testdeps" name="dbus-testdeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Test suite depends on:</strong>
+            <span class="segbody">Several packages in BLFS</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="dbus-before" name="dbus-before"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Must be installed before:</strong>
+            <span class="segbody">None</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="dbus-optdeps" name="dbus-optdeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Optional dependencies:</strong>
+            <span class="segbody"><a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/x/x7lib.html">
+            Xorg Libraries</a></span>
           </div>
         </div>
       </div>
@@ -796,56 +845,6 @@
         </div>
       </div>
       <h2>
-        <a id="eudev-dep" name="eudev-dep"></a>Eudev
-      </h2>
-      <div class="segmentedlist">
-        <a id="eudev-depends" name="eudev-depends"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Installation depends on:</strong>
-            <span class="segbody">Bash, Binutils, Coreutils, Gawk, GCC,
-            Glibc, Grep, Gperf, Make, Sed, and Util-linux</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="eudev-rundeps" name="eudev-rundeps"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Required at runtime:</strong>
-            <span class="segbody">Glibc, Kmod, Xz, Util-linux, and
-            Zlib.</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="eudev-testdeps" name="eudev-testdeps"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Test suite depends on:</strong>
-            <span class="segbody">None</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="eudev-before" name="eudev-before"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody">None</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="eudev-optdeps" name="eudev-optdeps"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Optional dependencies:</strong>
-            <span class="segbody">None</span>
-          </div>
-        </div>
-      </div>
-      <h2>
         <a id="expat-dep" name="expat-dep"></a>Expat
       </h2>
       <div class="segmentedlist">
@@ -940,7 +939,8 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/tk.html">Tk</a></span>
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/tk.html">
+            Tk</a></span>
           </div>
         </div>
       </div>
@@ -990,7 +990,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/libseccomp.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libseccomp.html">
             libseccomp</a></span>
           </div>
         </div>
@@ -1139,7 +1139,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/python-modules.html#pytest">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#pytest">
             pytest</a> and <a class="ulink" href=
             "https://pypi.org/project/testpath">testpath</a></span>
           </div>
@@ -1192,7 +1192,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/libsigsegv.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libsigsegv.html">
             libsigsegv</a></span>
           </div>
         </div>
@@ -1542,9 +1542,9 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/pcre2.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/pcre2.html">
             PCRE2</a> and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/libsigsegv.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libsigsegv.html">
             libsigsegv</a></span>
           </div>
         </div>
@@ -1595,9 +1595,9 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/pst/gs.html">ghostscript</a>
+            "https://www.linuxfromscratch.org/blfs/view/systemd/pst/gs.html">ghostscript</a>
             and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/uchardet.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/uchardet.html">
             Uchardet</a></span>
           </div>
         </div>
@@ -1896,16 +1896,64 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/server/db.html">Berkeley
-            DB</a>, <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/iptables.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/server/db.html">
+            Berkeley DB</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/iptables.html">
             iptables</a>, <a class="ulink" href=
             "https://github.com/libbpf/libbpf">libbpf</a>, <a class="ulink"
             href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/basicnet/libmnl.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/basicnet/libmnl.html">
             libmnl</a>, and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/basicnet/libtirpc.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/basicnet/libtirpc.html">
             libtirpc</a></span>
+          </div>
+        </div>
+      </div>
+      <h2>
+        <a id="jinja2-dep" name="jinja2-dep"></a>Jinja2
+      </h2>
+      <div class="segmentedlist">
+        <a id="jinja2-depends" name="jinja2-depends"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Installation depends on:</strong>
+            <span class="segbody">MarkupSafe and Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="jinja2-rundeps" name="jinja2-rundeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Required at runtime:</strong>
+            <span class="segbody">MarkupSafe and Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="jinja2-testdeps" name="jinja2-testdeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Test suite depends on:</strong>
+            <span class="segbody">No test suite available</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="jinja2-before" name="jinja2-before"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Must be installed before:</strong>
+            <span class="segbody">Systemd</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="jinja2-optdeps" name="jinja2-optdeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Optional dependencies:</strong>
+            <span class="segbody">None</span>
           </div>
         </div>
       </div>
@@ -1995,7 +2043,7 @@
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody"><span class="phrase">Eudev</span></span>
+            <span class="segbody"><span class="phrase">Systemd</span></span>
           </div>
         </div>
       </div>
@@ -2054,9 +2102,9 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/pcre2.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/pcre2.html">
             PCRE2</a> or <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/pcre.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/pcre.html">
             PCRE</a></span>
           </div>
         </div>
@@ -2107,7 +2155,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/linux-pam.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/linux-pam.html">
             Linux-PAM</a></span>
           </div>
         </div>
@@ -2356,9 +2404,9 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/cpio.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/cpio.html">
             cpio</a> and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/llvm.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/llvm.html">
             LLVM</a> (with Clang)</span>
           </div>
         </div>
@@ -2463,7 +2511,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/libsigsegv.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libsigsegv.html">
             libsigsegv</a></span>
           </div>
         </div>
@@ -2514,7 +2562,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/guile.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/guile.html">
             Guile</a></span>
           </div>
         </div>
@@ -2567,7 +2615,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/libseccomp.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libseccomp.html">
             libseccomp</a> and <a class="ulink" href=
             "https://po4a.org/index.php.en">po4a</a></span>
           </div>
@@ -2622,6 +2670,54 @@
         </div>
       </div>
       <h2>
+        <a id="markupsafe-dep" name="markupsafe-dep"></a>MarkupSafe
+      </h2>
+      <div class="segmentedlist">
+        <a id="markupsafe-depends" name="markupsafe-depends"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Installation depends on:</strong>
+            <span class="segbody">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="markupsafe-rundeps" name="markupsafe-rundeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Required at runtime:</strong>
+            <span class="segbody">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="markupsafe-testdeps" name="markupsafe-testdeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Test suite depends on:</strong>
+            <span class="segbody">No test suite available</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="markupsafe-before" name="markupsafe-before"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Must be installed before:</strong>
+            <span class="segbody">Jinja2</span>
+          </div>
+        </div>
+      </div>
+      <div class="segmentedlist">
+        <a id="markupsafe-optdeps" name="markupsafe-optdeps"></a>
+        <div class="seglistitem">
+          <div class="seg">
+            <strong class="segtitle">Optional dependencies:</strong>
+            <span class="segbody">None</span>
+          </div>
+        </div>
+      </div>
+      <h2>
         <a id="meson-dep" name="meson-dep"></a>Meson
       </h2>
       <div class="segmentedlist">
@@ -2656,7 +2752,7 @@
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody"><span class="phrase">None</span></span>
+            <span class="segbody"><span class="phrase">Systemd</span></span>
           </div>
         </div>
       </div>
@@ -2862,11 +2958,11 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/asciidoc.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/asciidoc.html">
             Asciidoc</a>, <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/doxygen.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/doxygen.html">
             Doxygen</a>, <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/emacs.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/emacs.html">
             Emacs</a>, and <a class="ulink" href=
             "https://re2c.org/">re2c</a></span>
           </div>
@@ -2967,7 +3063,8 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/ed.html">Ed</a></span>
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/ed.html">
+            Ed</a></span>
           </div>
         </div>
       </div>
@@ -3017,8 +3114,8 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/server/db.html">Berkeley
-            DB</a></span>
+            "https://www.linuxfromscratch.org/blfs/view/systemd/server/db.html">
+            Berkeley DB</a></span>
           </div>
         </div>
       </div>
@@ -3068,7 +3165,7 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/glib2.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/glib2.html">
             Glib2</a></span>
           </div>
         </div>
@@ -3219,13 +3316,14 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/server/db.html">Berkeley
-            DB</a>, <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/basicnet/libnsl.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/server/db.html">
+            Berkeley DB</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/basicnet/libnsl.html">
             libnsl</a>, <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/server/sqlite.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/server/sqlite.html">
             SQLite</a>, and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/tk.html">Tk</a></span>
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/tk.html">
+            Tk</a></span>
           </div>
         </div>
       </div>
@@ -3374,46 +3472,48 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/cracklib.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/cracklib.html">
             CrackLib</a> and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/linux-pam.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/linux-pam.html">
             Linux-PAM</a></span>
           </div>
         </div>
       </div>
       <h2>
-        <a id="sysklogd-dep" name="sysklogd-dep"></a>Sysklogd
+        <a id="systemd-dep" name="systemd-dep"></a>Systemd
       </h2>
       <div class="segmentedlist">
-        <a id="sysklogd-depends" name="sysklogd-depends"></a>
+        <a id="systemd-depends" name="systemd-depends"></a>
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Installation depends on:</strong>
-            <span class="segbody">Binutils, Coreutils, GCC, Glibc, Make, and
-            Patch</span>
+            <span class="segbody">Acl, Attr, Bash, Binutils, Coreutils,
+            Diffutils, Expat, Gawk, GCC, Glibc, Gperf, Grep, Jinja2, Libcap,
+            Meson, Sed, Util-linux, and Zstd</span>
           </div>
         </div>
       </div>
       <div class="segmentedlist">
-        <a id="sysklogd-rundeps" name="sysklogd-rundeps"></a>
+        <a id="systemd-rundeps" name="systemd-rundeps"></a>
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Required at runtime:</strong>
-            <span class="segbody">Glibc</span>
+            <span class="segbody">Acl, Attr, Glibc, Libcap, and
+            Util-linux</span>
           </div>
         </div>
       </div>
       <div class="segmentedlist">
-        <a id="sysklogd-testdeps" name="sysklogd-testdeps"></a>
+        <a id="systemd-testdeps" name="systemd-testdeps"></a>
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Test suite depends on:</strong>
-            <span class="segbody">No test suite available</span>
+            <span class="segbody">None</span>
           </div>
         </div>
       </div>
       <div class="segmentedlist">
-        <a id="sysklogd-before" name="sysklogd-before"></a>
+        <a id="systemd-before" name="systemd-before"></a>
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
@@ -3422,60 +3522,78 @@
         </div>
       </div>
       <div class="segmentedlist">
-        <a id="sysklogd-optdeps" name="sysklogd-optdeps"></a>
+        <a id="systemd-optdeps" name="systemd-optdeps"></a>
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
-            <span class="segbody">None</span>
-          </div>
-        </div>
-      </div>
-      <h2>
-        <a id="sysvinit-dep" name="sysvinit-dep"></a>Sysvinit
-      </h2>
-      <div class="segmentedlist">
-        <a id="sysvinit-depends" name="sysvinit-depends"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Installation depends on:</strong>
-            <span class="segbody">Binutils, Coreutils, GCC, Glibc, Make, and
-            Sed</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="sysvinit-rundeps" name="sysvinit-rundeps"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Required at runtime:</strong>
-            <span class="segbody">Glibc</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="sysvinit-testdeps" name="sysvinit-testdeps"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Test suite depends on:</strong>
-            <span class="segbody">No test suite available</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="sysvinit-before" name="sysvinit-before"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody">None</span>
-          </div>
-        </div>
-      </div>
-      <div class="segmentedlist">
-        <a id="sysvinit-optdeps" name="sysvinit-optdeps"></a>
-        <div class="seglistitem">
-          <div class="seg">
-            <strong class="segtitle">Optional dependencies:</strong>
-            <span class="segbody">None</span>
+            <span class="segbody"><a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/btrfs-progs.html">
+            btrfs-progs</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/basicnet/curl.html">
+            cURL</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/cryptsetup.html">
+            cryptsetup</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/pst/docbook.html">
+            docbook-xml</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/pst/docbook-xsl.html">
+            docbook-xsl-nons</a>, <a class="ulink" href=
+            "https://sourceware.org/elfutils/">elfutils</a>, <a class="ulink"
+            href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/git.html">
+            Git</a>, <a class="ulink" href=
+            "https://sourceforge.net/projects/gnu-efi/">gnu-efi</a>,
+            <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/gnutls.html">
+            GnuTLS</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/iptables.html">
+            iptables</a>, <a class="ulink" href=
+            "https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</a>,
+            <a class="ulink" href=
+            "https://developers.yubico.com/libfido2/">libfido2</a>, <a class=
+            "ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libgcrypt.html">
+            libgcrypt</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libidn2.html">
+            libidn2</a>, <a class="ulink" href=
+            "https://www.gnu.org/software/libmicrohttpd/">Libmicrohttpd</a>,
+            <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/libpwquality.html">
+            libpwquality</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libseccomp.html">
+            libseccomp</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libxkbcommon.html">
+            libxkbcommon</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libxslt.html">
+            libxslt</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/linux-pam.html">
+            Linux-PAM</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#lxml">
+            lxml</a>, <a class="ulink" href=
+            "https://lz4.github.io/lz4/">LZ4</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/make-ca.html">
+            make-ca</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/p11-kit.html">
+            p11-kit</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/pcre2.html">
+            PCRE2</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/polkit.html">
+            Polkit</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/qemu.html">
+            qemu</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/qrencode.html">
+            qrencode</a>, <a class="ulink" href=
+            "https://sourceforge.net/projects/linuxquota/">quota-tools</a>,
+            <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/basicnet/rsync.html">
+            rsync</a>, <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#sphinx">
+            Sphinx</a>, <a class="ulink" href=
+            "https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</a>,
+            <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/valgrind.html">
+            Valgrind</a>, and <a class="ulink" href=
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/zsh.html">
+            zsh</a></span>
           </div>
         </div>
       </div>
@@ -3638,8 +3756,8 @@
           <div class="seg">
             <strong class="segtitle">Installation depends on:</strong>
             <span class="segbody">Bash, Binutils, Coreutils, Diffutils,
-            <span class="phrase">Eudev,</span> Findutils, Gawk, GCC, Gettext,
-            Glibc, Grep, Make, Ncurses, Sed, and Zlib</span>
+            Findutils, Gawk, GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
+            <span class="phrase">Systemd,</span> and Zlib</span>
           </div>
         </div>
       </div>
@@ -3678,9 +3796,9 @@
             <span class="segbody"><a class="ulink" href=
             "https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</a>,
             <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/linux-pam.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/linux-pam.html">
             Linux-PAM</a> and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/postlfs/smartmontools.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/smartmontools.html">
             smartmontools</a></span>
           </div>
         </div>
@@ -3732,15 +3850,15 @@
           <div class="seg">
             <strong class="segtitle">Optional dependencies:</strong>
             <span class="segbody"><a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/x/installing.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/x/installing.html">
             Xorg</a>, <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/x/gtk2.html">GTK+2</a>,
+            "https://www.linuxfromscratch.org/blfs/view/systemd/x/gtk2.html">GTK+2</a>,
             <a class="ulink" href=
             "https://lesstif.sourceforge.net/">LessTif</a>, <a class="ulink"
             href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/ruby.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/ruby.html">
             Ruby</a>, and <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/gpm.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/gpm.html">
             GPM</a></span>
           </div>
         </div>
@@ -3780,7 +3898,7 @@
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody"><span class="phrase">None</span></span>
+            <span class="segbody"><span class="phrase">Jinja2</span></span>
           </div>
         </div>
       </div>
@@ -3878,8 +3996,8 @@
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody"><span class="phrase">Eudev,</span> File,
-            GRUB, Kmod, Libelf, <span class="phrase">and</span> Man-DB</span>
+            <span class="segbody">File, GRUB, Kmod, Libelf,
+            Man-DB<span class="phrase">, and Systemd</span></span>
           </div>
         </div>
       </div>
@@ -3978,8 +4096,8 @@
         <div class="seglistitem">
           <div class="seg">
             <strong class="segtitle">Must be installed before:</strong>
-            <span class="segbody"><span class="phrase">GCC and
-            Libelf</span></span>
+            <span class="segbody"><span class="phrase">GCC, Libelf, and
+            Systemd</span></span>
           </div>
         </div>
       </div>
@@ -4004,10 +4122,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="../scripts/scripts.html" title=
-          "Boot and sysconfig scripts version-20230101">Next</a>
+          <a accesskey="n" href="licenses.html" title="LFS Licenses">Next</a>
           <p>
-            Boot and sysconfig scripts version-20230101
+            LFS Licenses
           </p>
         </li>
         <li class="up">
@@ -4016,7 +4133,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

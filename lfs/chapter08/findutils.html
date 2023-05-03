@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Installing Basic System Software
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -79,24 +79,13 @@
         <p>
           Prepare Findutils for compilation:
         </p>
-        <pre class="userinput"><kbd class="command">case $(uname -m) in
-    i?86)   TIME_T_32_BIT_OK=yes ./configure --prefix=/usr --localstatedir=/var/lib/locate ;;
-    x86_64) ./configure --prefix=/usr --localstatedir=/var/lib/locate ;;
-esac</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">./configure --prefix=/usr --localstatedir=/var/lib/locate</kbd></pre>
         <div class="variablelist">
           <p class="title">
             <strong>The meaning of the configure options:</strong>
           </p>
           <dl class="variablelist">
-            <dt>
-              <span class="term"><span class=
-              "command"><strong>TIME_32_BIT_OK=yes</strong></span></span>
-            </dt>
-            <dd>
-              <p>
-                This setting is needed for building on a 32 bit system.
-              </p>
-            </dd>
             <dt>
               <span class="term"><em class=
               "parameter"><code>--localstatedir</code></em></span>
@@ -240,7 +229,7 @@ su tester -c "PATH=$PATH make check"</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

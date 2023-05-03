@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      5.6.&nbsp;Libstdc++ from GCC-12.2.0
+      5.6.&nbsp;Libstdc++ from GCC-13.1.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL-NS Stylesheets Vsnapshot" />
@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;Compiling a Cross-Toolchain
@@ -41,21 +41,21 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
     <div class="wrap" lang="en" xml:lang="en">
       <h1 class="sect1">
         <a id="ch-tools-libstdcpp" name="ch-tools-libstdcpp"></a>5.6.
-        Libstdc++ from GCC-12.2.0
+        Libstdc++ from GCC-13.1.0
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <p>
           Libstdc++ is the standard C++ library. It is needed to compile C++
           code (part of GCC is written in C++), but we had to defer its
           installation when we built <a class="xref" href="gcc-pass1.html"
-          title="5.3.&nbsp;GCC-12.2.0 - Pass 1">gcc-pass1</a> because
+          title="5.3.&nbsp;GCC-13.1.0 - Pass 1">gcc-pass1</a> because
           Libstdc++ depends on Glibc, which was not yet available in the
           target directory.
         </p>
@@ -84,7 +84,7 @@
           <p>
             <span class="application">Libstdc++</span> is part of the GCC
             sources. You should first unpack the GCC tarball and change to
-            the <code class="filename">gcc-12.2.0</code> directory.
+            the <code class="filename">gcc-13.1.0</code> directory.
           </p>
         </div>
         <p>
@@ -103,7 +103,7 @@ cd       build</kbd></pre>
     --disable-multilib              \
     --disable-nls                   \
     --disable-libstdcxx-pch         \
-    --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/12.2.0</kbd></pre>
+    --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/13.1.0</kbd></pre>
         <div class="variablelist">
           <p class="title">
             <strong>The meaning of the configure options:</strong>
@@ -132,7 +132,7 @@ cd       build</kbd></pre>
             </dd>
             <dt>
               <span class="term"><em class=
-              "parameter"><code>--with-gxx-include-dir=/tools/$LFS_TGT/include/c++/12.2.0</code></em></span>
+              "parameter"><code>--with-gxx-include-dir=/tools/$LFS_TGT/include/c++/13.1.0</code></em></span>
             </dt>
             <dd>
               <p>
@@ -149,7 +149,7 @@ cd       build</kbd></pre>
                 path <code class="filename">$LFS</code> (specified when
                 building GCC-pass1) to the include file search path, so it
                 will actually search in <code class=
-                "filename">$LFS/tools/$LFS_TGT/include/c++/12.2.0</code>. The
+                "filename">$LFS/tools/$LFS_TGT/include/c++/13.1.0</code>. The
                 combination of the <em class=
                 "parameter"><code>DESTDIR</code></em> variable (in the
                 <span class="command"><strong>make install</strong></span>
@@ -205,7 +205,7 @@ cd       build</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

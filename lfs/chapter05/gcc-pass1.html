@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      5.3.&nbsp;GCC-12.2.0 - Pass 1
+      5.3.&nbsp;GCC-13.1.0 - Pass 1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL-NS Stylesheets Vsnapshot" />
@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;Compiling a Cross-Toolchain
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="linux-headers.html" title=
-          "Linux-6.2.11 API Headers">Next</a>
+          "Linux-6.3.1 API Headers">Next</a>
           <p>
-            Linux-6.2.11 API Headers
+            Linux-6.3.1 API Headers
           </p>
         </li>
         <li class="up">
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
     <div class="wrap" lang="en" xml:lang="en">
       <h1 class="sect1">
         <a id="ch-tools-gcc-pass1" name="ch-tools-gcc-pass1"></a>5.3.
-        GCC-12.2.0 - Pass 1
+        GCC-13.1.0 - Pass 1
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <p>
@@ -90,7 +90,7 @@
             procedures are the same as every other chapter, as explained
             earlier (<a class="xref" href=
             "../partintro/generalinstructions.html#buildinstr">Package build
-            instructions</a>). First, extract the gcc-12.2.0 tarball from the
+            instructions</a>). First, extract the gcc-13.1.0 tarball from the
             sources directory, and then change to the directory created. Only
             then should you proceed with the instructions below.
           </p>
@@ -289,7 +289,7 @@ cd       build</kbd></pre>
         </div>
         <pre class="userinput"><kbd class="command">cd ..
 cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
-  `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/install-tools/include/limits.h</kbd></pre>
+  `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include/limits.h</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <p>
@@ -311,9 +311,9 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
         </li>
         <li class="next">
           <a accesskey="n" href="linux-headers.html" title=
-          "Linux-6.2.11 API Headers">Next</a>
+          "Linux-6.3.1 API Headers">Next</a>
           <p>
-            Linux-6.2.11 API Headers
+            Linux-6.3.1 API Headers
           </p>
         </li>
         <li class="up">
@@ -322,7 +322,7 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Installing Basic System Software
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="iana-etc.html" title=
-          "Iana-Etc-20230405">Prev</a>
+          "Iana-Etc-20230418">Prev</a>
           <p>
-            Iana-Etc-20230405
+            Iana-Etc-20230418
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -257,6 +257,13 @@ cd       build</kbd></pre>
         "command">cp -v ../nscd/nscd.conf /etc/nscd.conf
 mkdir -pv /var/cache/nscd</kbd></pre>
         <p>
+          Install the systemd support files for <span class=
+          "command"><strong>nscd</strong></span>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
+install -v -Dm644 ../nscd/nscd.service /usr/lib/systemd/system/nscd.service</kbd></pre>
+        <p>
           Next, install the locales that can make the system respond in a
           different language. None of these locales are required, but if some
           of them are missing, the test suites of some packages will skip
@@ -344,7 +351,7 @@ localedef -i ja_JP -f SHIFT_JIS ja_JP.SJIS 2&gt; /dev/null || true</kbd></pre>
             names. This is a run time dependency. If this capability is
             needed, the instructions for installing libidn2 are in the
             <a class="ulink" href=
-            "https://www.linuxfromscratch.org/blfs/view/svn/general/libidn2.html">
+            "https://www.linuxfromscratch.org/blfs/view/systemd/general/libidn2.html">
             BLFS libidn2 page</a>.
           </p>
         </div>
@@ -1199,9 +1206,9 @@ mkdir -pv /etc/ld.so.conf.d</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="iana-etc.html" title=
-          "Iana-Etc-20230405">Prev</a>
+          "Iana-Etc-20230418">Prev</a>
           <p>
-            Iana-Etc-20230405
+            Iana-Etc-20230418
           </p>
         </li>
         <li class="next">
@@ -1216,7 +1223,7 @@ mkdir -pv /etc/ld.so.conf.d</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>

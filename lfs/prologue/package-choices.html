@@ -13,10 +13,10 @@
     "text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="lfs" id="lfs-r11.3-65">
+  <body class="lfs" id="lfs-r11.3-77-systemd">
     <div class="navheader">
       <h4>
-        Linux From Scratch - Version r11.3-65
+        Linux From Scratch - Version r11.3-77-systemd
       </h4>
       <h3>
         Preface
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
@@ -172,6 +172,15 @@
           </li>
           <li class="listitem">
             <p>
+              D-Bus
+            </p>
+            <p>
+              This package contains programs to implement a message bus
+              system, a simple way for applications to talk to one another.
+            </p>
+          </li>
+          <li class="listitem">
+            <p>
               DejaGNU
             </p>
             <p>
@@ -197,17 +206,6 @@
               This package supplies utilities for handling the ext2, ext3 and
               ext4 file systems. These are the most common and thoroughly
               tested file systems that Linux supports.
-            </p>
-          </li>
-          <li class="listitem">
-            <p>
-              Eudev
-            </p>
-            <p>
-              This package is a device manager. It dynamically controls the
-              ownership, permissions, names, and symbolic links of device
-              nodes in the /dev directory when devices are added to or
-              removed from the system.
             </p>
           </li>
           <li class="listitem">
@@ -322,7 +320,7 @@
             <p>
               This package produces a program that generates a perfect hash
               function from a set of keys. It is required by <span class=
-              "phrase">Eudev</span> .
+              "phrase">Systemd</span>.
             </p>
           </li>
           <li class="listitem">
@@ -398,6 +396,15 @@
               This package contains programs for basic and advanced IPv4 and
               IPv6 networking. It was chosen over the other common network
               tools package (net-tools) for its IPv6 capabilities.
+            </p>
+          </li>
+          <li class="listitem">
+            <p>
+              Jinja2
+            </p>
+            <p>
+              This package is a Python module for text templating. It's
+              required to build Systemd.
             </p>
           </li>
           <li class="listitem">
@@ -508,6 +515,15 @@
             <p>
               This package contains a program for directing the building of
               packages. It is required by almost every package in LFS.
+            </p>
+          </li>
+          <li class="listitem">
+            <p>
+              MarkupSafe
+            </p>
+            <p>
+              This package is a Python module for processing strings in
+              HTML/XHTML/XML safely. Jinja2 requires this package.
             </p>
           </li>
           <li class="listitem">
@@ -681,22 +697,13 @@
           </li>
           <li class="listitem">
             <p>
-              Sysklogd
+              Systemd
             </p>
             <p>
-              This package supplies programs for logging system messages,
-              such as those emitted by the kernel or daemon processes when
-              unusual events occur.
-            </p>
-          </li>
-          <li class="listitem">
-            <p>
-              Sysvinit
-            </p>
-            <p>
-              This package provides the <span class="application">init</span>
-              program, the parent of all the other processes on a running
-              Linux system.
+              This package provides an <span class="application">init</span>
+              program and several additional boot and system control
+              capabilities as an alternative to Sysvinit. It is used by many
+              Linux distributions.
             </p>
           </li>
           <li class="listitem">
@@ -818,7 +825,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version r11.3-65">Home</a>
+          "Linux From Scratch - Version r11.3-77-systemd">Home</a>
         </li>
       </ul>
     </div>
